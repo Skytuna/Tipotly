@@ -1,4 +1,5 @@
-# A platform where you can store financial information about your trips with your friends.
+# A platform where you can store financial information about your trips with your friends. [Example Site]
+
 ![alt text](https://skytuna.s-ul.eu/jtXqvRFr)
 ![alt text](https://skytuna.s-ul.eu/UUOBVl98)
 
@@ -53,6 +54,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 [MIT](https://choosealicense.com/licenses/mit/)
 
    [repo]: <https://github.com/Skytuna/Tipotly>
+   [Example Site]: <https://tipotly.web.app/>
    [React]: <https://reactjs.org/>
    [Tailwind CSS]: <https://tailwindcss.com/>
    [Flowbite-React]: <https://flowbite-react.com/>
