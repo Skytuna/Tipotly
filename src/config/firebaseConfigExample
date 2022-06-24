@@ -1,0 +1,12 @@
+/**
+ * @example 
+ *  {
+     apiKey: '12312312312312312312',
+     authDomain: 'example.firebaseapp.com',
+     projectId: 'example',
+     storageBucket: 'example.appspot.com',
+     messagingSenderId: '123123123123',
+     appId: '1:123123123:web:123123123123',
+     measurementId: 'example-123',
+    }
+ */
