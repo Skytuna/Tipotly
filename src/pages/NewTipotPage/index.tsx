@@ -17,6 +17,7 @@ export default function NewTipotPage() {
                 id: docRef.id,
                 createdAt: serverTimestamp(),
                 user,
+                tipotRows: [],
             });
             navigate(-1);
         } catch (err) {

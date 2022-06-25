@@ -49,6 +49,8 @@ export function calculateTransactions(oldTipotRows: TipotRow[]): TipotRow[] {
     let transactionSums = calcTransactionSums(oldTipotRows);
     const averageValue = findAverageTransaction(oldTipotRows);
 
+    if (!averageValue) return oldTipotRows;
+
     while (true) {
         if (isAllUsersEqual(transactionSums, averageValue)) break;
 
@@ -75,7 +77,9 @@ export function calculateTransactions(oldTipotRows: TipotRow[]): TipotRow[] {
         });
     }
 
+    // Copy old tipot rows without modifying old array
     let newTipotRows: TipotRow[] = [...JSON.parse(JSON.stringify(oldTipotRows))];
+
     return newTipotRows.map((tipotRow) => ({
         ...tipotRow,
         exchanges: transactionSums[tipotRow.user?.id!].exchanges,

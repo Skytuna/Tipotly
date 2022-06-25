@@ -61,6 +61,8 @@ export default function TipotRow({
         return allUsers.filter((u) => !tipotRows?.map((r) => r.user?.id).includes(u.id));
     }, [userSnapshot?.exists()]);
 
+    const isFirstTransactionEmpty = tipotRow?.transactions && tipotRow.transactions[0]?.value === 0;
+
     return (
         <div className='relative max-w-full' ref={hoverRef}>
             <div
@@ -85,8 +87,15 @@ export default function TipotRow({
                                 <>
                                     <div className='flex flex-row gap-2 sm:gap-4'>
                                         <TransactionItem
-                                            className='h-10 w-10'
-                                            onClick={() => addTransaction && addTransaction()}
+                                            className={twMerge(
+                                                'h-10 w-10 cursor-pointer',
+                                                isFirstTransactionEmpty && 'cursor-not-allowed',
+                                            )}
+                                            onClick={() =>
+                                                addTransaction &&
+                                                !isFirstTransactionEmpty &&
+                                                addTransaction()
+                                            }
                                         />
                                         {tipotRow.transactions.map((transaction, i) => (
                                             <TransactionItem

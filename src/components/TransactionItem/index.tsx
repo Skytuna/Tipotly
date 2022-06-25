@@ -62,7 +62,7 @@ export default function TransactionItem({
             ) : (
                 <FiPlusCircle
                     size={ICON_SIZE.XSMALL}
-                    className={DEFAULT_ICON_COLOR + ' cursor-pointer'}
+                    className={DEFAULT_ICON_COLOR}
                 />
             )}
 
