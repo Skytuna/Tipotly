@@ -1,5 +1,6 @@
 # A platform where you can store financial information about your trips with your friends. [Example Site]
 
+This project was created due to the lost time while figuring out how much money who should give to who after trips that we make with my friends. 
 ![alt text](https://skytuna.s-ul.eu/jtXqvRFr)
 ![alt text](https://skytuna.s-ul.eu/UUOBVl98)
 
